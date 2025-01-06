@@ -348,6 +348,10 @@ aspect-ratio: 16 / 9 ;
     text-align: left;
 }
 
+#menu-list li {
+    font-family: "Montserrat", helvetica, arial, serif;
+}
+
 
 /* --------Petit ecran----- */
 
@@ -355,6 +359,10 @@ aspect-ratio: 16 / 9 ;
 
     body {
         padding: 12px;
+    }
+
+    #menu-list li {
+        font-family: "Montserrat", helvetica, arial, serif;
     }
 
 

@@ -2,6 +2,8 @@
 body {
     text-align: center;
     padding: 20px;
+    font-family: "Montserrat", helvetica, arial, serif;
+    font-weight: 400;
 }
 
 #header {
@@ -37,7 +39,7 @@ width: 100%;
 
 h1 {
 
-    font-family: "Montserrat", arial, serif;
+    font-family: "Montserrat", helvetica, arial, serif;
     font-weight: 700;
     font-size: 2.4rem;
     margin-bottom: 0px;
@@ -203,7 +205,7 @@ max-width: 500px;
     /* justify-content: flex-end; */
     /* text-align: right; */
     /* margin-top: 300px; */
-    font-family: "Montserrat";
+    font-family: "Montserrat", helvetica, arial, serif;
     font-size: .8rem;
     font-weight: 500;
     letter-spacing: 3px; 
@@ -238,6 +240,8 @@ max-width: 500px;
  }
 
  #menu-list li{
+    font-family: "Montserrat", helvetica, arial, serif;
+    font-weight: 500;
     display: inline;
     margin-right: 10px;
     margin-top: 0px;
@@ -348,6 +352,10 @@ aspect-ratio: 16 / 9 ;
 /* --------Petit ecran----- */
 
 @media (max-width: 1024px) {
+
+    body {
+        padding: 12px;
+    }
 
 
     .textes-and-animation-totale {

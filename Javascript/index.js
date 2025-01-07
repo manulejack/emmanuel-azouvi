@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
           document.querySelector('.span.two').classList.toggle('disparait-two');
           document.querySelector('.span.three').classList.toggle('rotate-three');
       }
+              if (e.target.closest('.item-logo')) {  // Assuming .logo is the class for the logo
+          window.location.href = '/emmanuel-azouvi/index.html';
   });
 });
 

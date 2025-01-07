@@ -16,29 +16,59 @@
 
 // };
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.body.addEventListener('click', function (e) {
-      if (e.target.closest('.menu-box')) {  // Checks if the click is on the burger menu
-          const menuList = document.querySelector('#menu-list');
-          const menuBackground = document.querySelector('#menu-background');
-          menuList.classList.toggle('zero-opacity');
-          menuBackground.classList.toggle('pageBlancheOpened');
+// document.addEventListener('DOMContentLoaded', function () {
+//   document.body.addEventListener('click', function (e) {
+//       if (e.target.closest('.menu-box')) {  // Checks if the click is on the burger menu
+//           const menuList = document.querySelector('#menu-list');
+//           const menuBackground = document.querySelector('#menu-background');
+//           menuList.classList.toggle('zero-opacity');
+//           menuBackground.classList.toggle('pageBlancheOpened');
 
-          document.querySelector('.span.one').classList.toggle('rotate-one');
-          document.querySelector('.span.two').classList.toggle('disparait-two');
-          document.querySelector('.span.three').classList.toggle('rotate-three');
-      }
+//           document.querySelector('.span.one').classList.toggle('rotate-one');
+//           document.querySelector('.span.two').classList.toggle('disparait-two');
+//           document.querySelector('.span.three').classList.toggle('rotate-three');
+//       }
 
-});
+// });
 
 
-function loadHTML(targetElementId, filePath) {
-  fetch(filePath)
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById(targetElementId).innerHTML = html;
+// function loadHTML(targetElementId, filePath) {
+//   fetch(filePath)
+//     .then(response => response.text())
+//     .then(html => {
+//       document.getElementById(targetElementId).innerHTML = html;
+//     });
+// }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Calls to load the HTML content
+        loadHTML('header', '/emmanuel-azouvi/header.html');
+        loadHTML('footer', '/emmanuel-azouvi/footer.html');
+
+        // Add your other event listeners here, e.g. the click event listener
+        document.body.addEventListener('click', function (e) {
+            if (e.target.closest('.menu-box')) {  // Checks if the click is on the burger menu
+                const menuList = document.querySelector('#menu-list');
+                const menuBackground = document.querySelector('#menu-background');
+                menuList.classList.toggle('zero-opacity');
+                menuBackground.classList.toggle('pageBlancheOpened');
+
+                document.querySelector('.span.one').classList.toggle('rotate-one');
+                document.querySelector('.span.two').classList.toggle('disparait-two');
+                document.querySelector('.span.three').classList.toggle('rotate-three');
+            }
+        });
     });
-}
+
+    function loadHTML(targetElementId, filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById(targetElementId).innerHTML = html;
+            });
+    }
+
 
   // Load the header and footer dynamically
 

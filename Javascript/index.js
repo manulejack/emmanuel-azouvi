@@ -9,7 +9,7 @@ function loadHTML(targetElementId, filePath) {
         if (logo) {
           logo.style.cursor = 'pointer'; // Makes the cursor change to a pointer when hovering over the logo
           logo.addEventListener('click', function() {
-            window.location.href = '/emmanuel-azouvi/index-v3.html'; // Adjust this path to match your home page URL
+            window.location.href = '/emmanuel-azouvi/index.html'; // Adjust this path to match your home page URL
           });
         }
       }

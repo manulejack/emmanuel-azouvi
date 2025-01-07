@@ -28,5 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
           document.querySelector('.span.two').classList.toggle('disparait-two');
           document.querySelector('.span.three').classList.toggle('rotate-three');
       }
+    
+        if (e.target.closest('#menu-list a')) {
+      const menuList = document.querySelector('#menu-list');
+      if (menuList.classList.contains('zero-opacity')) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }
   });
 });

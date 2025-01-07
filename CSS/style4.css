@@ -469,6 +469,12 @@ aspect-ratio: 16 / 9 ;
 
 }
 
+@media (max-width: 600px) {
+    .name {
+        font-size: .3rem;
+    }
+}
+
 
 
 

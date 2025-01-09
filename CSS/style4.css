@@ -386,7 +386,7 @@ aspect-ratio: 16 / 9 ;
     .item-text p {
         /* max-width: 500px; */
        
-        text-align: center;
+/*         text-align: center; */
     }
 
     h1 {
